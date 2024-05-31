@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -43,6 +41,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         HUDManager.Singleton.StartGamePanel.SetActive(true);
+        HUDManager.Singleton.MainBtnPanel.SetActive(true);
+        
+        HUDManager.Singleton.DifficultyBtnPanel.SetActive(false);
         HUDManager.Singleton.EndGamePopup.SetActive(false);
         
         Cards.Clear();
@@ -53,33 +54,33 @@ public class GameManager : MonoBehaviour
 
     private void OnItemAdded(GameObject card)
     {
-        StartCoroutine(CheckCards());
-    }
-
-    private IEnumerator CheckCards()
-    {
         if (Cards.Count == 2)
         {
-            yield return new WaitForSeconds(2);
-            Debug.Log(Cards[0].transform.GetChild(0).name);
-            if (Cards[0].transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name == 
-                Cards[1].transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name)
-            {
-                ScorePoints += 100;
-                
-                if (boardActive.IsEndGame())
-                {
-                    HUDManager.Singleton.EndGamePopup.SetActive(true);
-                }
-            }
-            else
-            {
-                Cards[0].GetComponent<Animator>().SetBool("Show", false);
-                Cards[1].GetComponent<Animator>().SetBool("Show", false);
-            }
-            
+            StartCoroutine(CheckCards(Cards[0], Cards[1]));
             Cards.Clear();
-            StopAllCoroutines();
+        }
+        
+    }
+
+    private IEnumerator CheckCards(GameObject cardOne, GameObject cardTwo)
+    {
+        Cards.Clear();
+        
+        if (cardOne.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name == 
+            cardTwo.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name)
+        {
+            ScorePoints += 100;
+                
+            if (boardActive.IsEndGame())
+            {
+                HUDManager.Singleton.EndGamePopup.SetActive(true);
+            }
+        }
+        else
+        {
+            yield return new WaitForSeconds(2);
+            cardOne.GetComponent<Animator>().SetBool("Show", false);
+            cardTwo.GetComponent<Animator>().SetBool("Show", false);
         }
     }
 
@@ -114,6 +115,8 @@ public class GameManager : MonoBehaviour
         }
         
         boardActive.gameObject.SetActive(true);
-        HUDManager.Singleton.EndGamePopup.SetActive(false);
+        
+        if(HUDManager.Singleton.EndGamePopup.activeInHierarchy)
+            HUDManager.Singleton.EndGamePopup.SetActive(false);
     }
 }

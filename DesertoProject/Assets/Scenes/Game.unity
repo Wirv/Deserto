@@ -246,10 +246,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreTxt: {fileID: 2025731041}
+  StartGamePanel: {fileID: 386154534}
+  EndGamePopup: {fileID: 1747942405}
+  MainBtnPanel: {fileID: 1949518334}
+  DifficultyBtnPanel: {fileID: 770186061}
   quitBtn: {fileID: 1346865625}
   EasyBtn: {fileID: 707531978}
+  EasyBtn2: {fileID: 518265477}
   MediumBtn: {fileID: 1211371469}
+  MediumBtn2: {fileID: 364604989}
   HardBtn: {fileID: 922967166}
+  HardBtn2: {fileID: 71126283}
+  StartBtn: {fileID: 1898618902}
+  LoadBtn: {fileID: 347315495}
+  ExitBtn: {fileID: 1975753025}
 --- !u!1 &71126281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,8 +3160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fb5d6ad6859bb45a32052ce14fa313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartGamePanel: {fileID: 386154534}
-  EndGamePopup: {fileID: 1747942405}
   board2x2: {fileID: 1013770930}
   board2x3: {fileID: 1788921763}
   board5x6: {fileID: 1316281979}

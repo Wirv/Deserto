@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -50,11 +47,11 @@ public class HUDManager : MonoBehaviour
         EasyBtn.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(0);});
         MediumBtn.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(1);});
         HardBtn.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(2);});
-        EasyBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(0);});
-        MediumBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(1);});
-        HardBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(2);});
+        EasyBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(0); StartGamePanel.SetActive(false);});
+        MediumBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(1); StartGamePanel.SetActive(false);});
+        HardBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(2); StartGamePanel.SetActive(false);});
         
-        StartBtn.onClick.AddListener(() => { });
-        LoadBtn.onClick.AddListener(() => { });
+        StartBtn.onClick.AddListener(() => {MainBtnPanel.SetActive(false); DifficultyBtnPanel.SetActive(true);});
+        LoadBtn.onClick.AddListener(() => { }); //carica partita
     }
 }
