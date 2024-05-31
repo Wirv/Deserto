@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GameManager.Singleton.Cards.Count < 2)
         {
             PointerOverUIElement();
         }
@@ -35,10 +35,11 @@ public class PlayerController : MonoBehaviour
         // Controlla se uno degli oggetti colpiti è questa carta
         foreach (RaycastResult result in results)
         {
-            if (result.gameObject.GetComponent<Animator>())
+            if (result.gameObject.GetComponent<Animator>() && !result.gameObject.GetComponent<Animator>().GetBool("Show"))
             {
                 Animator animator = result.gameObject.GetComponent<Animator>();
                 animator.SetBool("Show", true);
+                GameManager.Singleton.Cards.Add(result.gameObject);
             }
         }
 
