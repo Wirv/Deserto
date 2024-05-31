@@ -10,12 +10,15 @@ public class GameManager : MonoBehaviour
 
     [Header("References")] 
     public CardsList<GameObject> Cards = new CardsList<GameObject>();
+    [HideInInspector] public bool Loading = false;
     
     [SerializeField] private BoardManager board2x2;
     [SerializeField] private BoardManager board2x3;
     [SerializeField] private BoardManager board5x6;
 
     private BoardManager boardActive;
+    private int combo = 0;
+    
 
     public int ScorePoints
     {
@@ -36,6 +39,10 @@ public class GameManager : MonoBehaviour
         {
             Singleton = this;
         }
+
+#if UNITY_ANDROID || UNITY_IOS
+         Screen.orientation = ScreenOrientation.LandscapeLeft;
+#endif
     }
 
     private void Start()
@@ -47,9 +54,14 @@ public class GameManager : MonoBehaviour
         HUDManager.Singleton.EndGamePopup.SetActive(false);
         
         Cards.Clear();
-        ScorePoints = 0;
+        ScorePoints = PlayerPrefs.GetInt("ScorePoints", 0);
 
         Cards.ItemAdded += OnItemAdded;
+    }
+
+    public void LoadGame()
+    {
+        
     }
 
     private void OnItemAdded(GameObject card)
@@ -69,15 +81,22 @@ public class GameManager : MonoBehaviour
         if (cardOne.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name == 
             cardTwo.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name)
         {
-            ScorePoints += 100;
+            ScorePoints += 100 * combo;
+
+            combo += 1;
+            SoundManager.Singleton.PlayCorrect();
                 
             if (boardActive.IsEndGame())
             {
+                SoundManager.Singleton.PlayEndGame();
+                yield return new WaitForSeconds(2);
                 HUDManager.Singleton.EndGamePopup.SetActive(true);
             }
         }
         else
         {
+            combo = 1;
+            SoundManager.Singleton.PlayError();
             yield return new WaitForSeconds(2);
             cardOne.GetComponent<Animator>().SetBool("Show", false);
             cardTwo.GetComponent<Animator>().SetBool("Show", false);
@@ -92,12 +111,14 @@ public class GameManager : MonoBehaviour
 
     public void SetBoardAndStartGame(int index)
     {
+        combo = 1;
         if (boardActive != null)
         {
             foreach (var card in boardActive.CardsOnBoard)
             {
                 card.GetComponent<Animator>().SetBool("Show", false);
                 card.GetComponent<Animator>().Play("BackIdle");
+                card.SetActive(false);
             }
             boardActive.gameObject.SetActive(false);
         }
@@ -115,8 +136,19 @@ public class GameManager : MonoBehaviour
         }
         
         boardActive.gameObject.SetActive(true);
+        StartCoroutine(TurnOnCard());
         
         if(HUDManager.Singleton.EndGamePopup.activeInHierarchy)
             HUDManager.Singleton.EndGamePopup.SetActive(false);
+    }
+
+    private IEnumerator TurnOnCard()
+    {
+        foreach (var card in boardActive.CardsOnBoard)
+        {
+            SoundManager.Singleton.PlayInit();
+            card.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 }

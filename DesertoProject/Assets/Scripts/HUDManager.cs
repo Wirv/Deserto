@@ -52,6 +52,6 @@ public class HUDManager : MonoBehaviour
         HardBtn2.onClick.AddListener(() => { GameManager.Singleton.SetBoardAndStartGame(2); StartGamePanel.SetActive(false);});
         
         StartBtn.onClick.AddListener(() => {MainBtnPanel.SetActive(false); DifficultyBtnPanel.SetActive(true);});
-        LoadBtn.onClick.AddListener(() => { }); //carica partita
+        LoadBtn.onClick.AddListener(() => { StartGamePanel.SetActive(false); GameManager.Singleton.Loading = true; GameManager.Singleton.LoadGame();}); 
     }
 }

@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
             {
                 Animator animator = result.gameObject.GetComponent<Animator>();
                 animator.SetBool("Show", true);
+                SoundManager.Singleton.PlayFlip();
                 GameManager.Singleton.Cards.Add(result.gameObject);
             }
         }

@@ -217,9 +217,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1497380446}
-  - {fileID: 1102434116}
-  - {fileID: 2025731040}
-  - {fileID: 1346865624}
   - {fileID: 1013770927}
   - {fileID: 1788921762}
   - {fileID: 1316281978}
@@ -252,10 +249,10 @@ MonoBehaviour:
   DifficultyBtnPanel: {fileID: 770186061}
   quitBtn: {fileID: 1346865625}
   EasyBtn: {fileID: 707531978}
-  EasyBtn2: {fileID: 518265477}
   MediumBtn: {fileID: 1211371469}
-  MediumBtn2: {fileID: 364604989}
   HardBtn: {fileID: 922967166}
+  EasyBtn2: {fileID: 518265477}
+  MediumBtn2: {fileID: 364604989}
   HardBtn2: {fileID: 71126283}
   StartBtn: {fileID: 1898618902}
   LoadBtn: {fileID: 347315495}
@@ -477,6 +474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -588,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -693,6 +698,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -805,6 +814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -911,6 +924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1016,6 +1033,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -1367,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
 --- !u!224 &379217985 stripped
@@ -1413,7 +1438,7 @@ RectTransform:
   - {fileID: 770186062}
   - {fileID: 1593979769}
   m_Father: {fileID: 63256022}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1828,6 +1853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2069,6 +2098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2179,6 +2212,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -2544,6 +2581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2649,6 +2690,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -2891,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
 --- !u!224 &549779970 stripped
@@ -2998,6 +3047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
 --- !u!224 &557083541 stripped
@@ -3104,6 +3157,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -3340,6 +3397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3451,6 +3512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
 --- !u!224 &648517954 stripped
@@ -3557,6 +3622,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -3673,6 +3742,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -3965,6 +4038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4075,6 +4152,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -4326,6 +4407,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -4690,6 +4775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4737,7 +4826,7 @@ RectTransform:
   - {fileID: 694336888}
   - {fileID: 1498836205}
   m_Father: {fileID: 63256022}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4888,6 +4977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4994,6 +5087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5099,6 +5196,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -5211,6 +5312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5247,17 +5352,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102434115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8867923, y: 1.8867923, z: 1.8867925}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 63256022}
-  m_RootOrder: 1
+  m_Father: {fileID: 1497380446}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105, y: -30}
+  m_AnchoredPosition: {x: -88.136086, y: -3462.2083}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102434117
@@ -5451,6 +5556,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -5797,7 +5906,7 @@ RectTransform:
   - {fileID: 1423934330}
   - {fileID: 1077219141}
   m_Father: {fileID: 63256022}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5974,6 +6083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6021,18 +6134,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346865623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8867923, y: 1.8867923, z: 1.8867925}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 985410437}
-  m_Father: {fileID: 63256022}
-  m_RootOrder: 3
+  m_Father: {fileID: 1497380446}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64, y: -58}
+  m_AnchoredPosition: {x: 1939.1594, y: -158.4342}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346865625
@@ -6212,6 +6325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6317,6 +6434,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -6424,6 +6545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6529,6 +6654,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -6710,7 +6839,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1102434116}
+  - {fileID: 2025731040}
+  - {fileID: 1346865624}
   m_Father: {fileID: 63256022}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -6852,6 +6984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6957,6 +7093,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -7282,6 +7422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
 --- !u!224 &1675334905 stripped
@@ -7294,6 +7438,153 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
   m_PrefabInstance: {fileID: 1675334904}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1677957846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677957848}
+  - component: {fileID: 1677957847}
+  - component: {fileID: 1677957849}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1677957847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677957846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6e272b15ed05a48b05e6ea950e1511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1677957849}
+  error: {fileID: 8300000, guid: 82151f10f0920ad4b8c67f0697d97641, type: 3}
+  correct: {fileID: 8300000, guid: 24fa3e5e666236b4a8c01f91e19ff2c6, type: 3}
+  cardFlip: {fileID: 8300000, guid: 4495bac58d708ba4db443fd8229e401f, type: 3}
+  cardInit: {fileID: 8300000, guid: 76b025e55261c43408f007daec4227a5, type: 3}
+  endGame: {fileID: 8300000, guid: ac40e7a0b6f9efb42a100634abb3f36e, type: 3}
+--- !u!4 &1677957848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677957846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1677957849
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677957846}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1722230969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
@@ -7334,7 +7625,7 @@ RectTransform:
   - {fileID: 922967165}
   - {fileID: 871966582}
   m_Father: {fileID: 63256022}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7417,7 +7708,7 @@ RectTransform:
   - {fileID: 453538711}
   - {fileID: 988495030}
   m_Father: {fileID: 63256022}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7584,6 +7875,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
@@ -8348,17 +8643,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025731039}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8867923, y: 1.8867923, z: 1.8867925}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 63256022}
-  m_RootOrder: 2
+  m_Father: {fileID: 1497380446}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105, y: -80}
+  m_AnchoredPosition: {x: -182.47571, y: -3462.2083}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025731041
@@ -8563,6 +8858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8669,6 +8968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230031680077574721, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8774,6 +9077,10 @@ PrefabInstance:
     - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230031679769282385, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8cdeefddeb774ab7e5889d4bff10f, type: 3}
