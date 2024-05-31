@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartGamePanel.SetActive(true);
-        EndGamePopup.SetActive(false);
+        HUDManager.Singleton.StartGamePanel.SetActive(true);
+        HUDManager.Singleton.EndGamePopup.SetActive(false);
         
         Cards.Clear();
         ScorePoints = 0;
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
                 
                 if (boardActive.IsEndGame())
                 {
-                    EndGamePopup.SetActive(true);
+                    HUDManager.Singleton.EndGamePopup.SetActive(true);
                 }
             }
             else
@@ -114,6 +114,6 @@ public class GameManager : MonoBehaviour
         }
         
         boardActive.gameObject.SetActive(true);
-        EndGamePopup.SetActive(false);
+        HUDManager.Singleton.EndGamePopup.SetActive(false);
     }
 }

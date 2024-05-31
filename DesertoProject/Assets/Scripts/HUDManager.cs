@@ -11,18 +11,23 @@ public class HUDManager : MonoBehaviour
 
     [Header("References")] 
     public TMP_Text ScoreTxt;
+    
+    [Header("Panels")]
     public GameObject StartGamePanel;
     public GameObject EndGamePopup;
     public GameObject MainBtnPanel;
     public GameObject DifficultyBtnPanel;
     
+    [Header("InGame")]
     [SerializeField] private Button quitBtn;
     
     [SerializeField] private Button EasyBtn;
-    [SerializeField] private Button EasyBtn2;
     [SerializeField] private Button MediumBtn;
-    [SerializeField] private Button MediumBtn2;
     [SerializeField] private Button HardBtn;
+    
+    [Header("MainMenu")]
+    [SerializeField] private Button EasyBtn2;
+    [SerializeField] private Button MediumBtn2;
     [SerializeField] private Button HardBtn2;
     
     [SerializeField] private Button StartBtn;
