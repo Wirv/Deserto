@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class SaveCard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string IndexCard;
+
+    private void OnEnable()
     {
-        
+        if (GameManager.Singleton.Loading)
+        {
+            if (PlayerPrefs.GetInt(IndexCard, 0) == 1)
+            {
+                transform.SetSiblingIndex(PlayerPrefs.GetInt(IndexCard + "t", 0));
+                GetComponent<Animator>().SetBool("Show", true);
+                GetComponent<Animator>().Play("FrontIdle");
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(IndexCard + "t", transform.GetSiblingIndex());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

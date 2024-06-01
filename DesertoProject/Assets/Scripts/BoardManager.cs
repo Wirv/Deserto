@@ -10,7 +10,8 @@ public class BoardManager : MonoBehaviour
 
     private void OnEnable()
     {
-        RandomizeCards();
+        if(!GameManager.Singleton.Loading)
+            RandomizeCards();
     }
 
     private void RandomizeCards()

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     [Header("References")] 
     public CardsList<GameObject> Cards = new CardsList<GameObject>();
-    [HideInInspector] public bool Loading = false;
+    public bool Loading = false;
     
     [SerializeField] private BoardManager board2x2;
     [SerializeField] private BoardManager board2x3;
@@ -54,14 +54,14 @@ public class GameManager : MonoBehaviour
         HUDManager.Singleton.EndGamePopup.SetActive(false);
         
         Cards.Clear();
-        ScorePoints = PlayerPrefs.GetInt("ScorePoints", 0);
 
         Cards.ItemAdded += OnItemAdded;
     }
 
     public void LoadGame()
     {
-        
+        ScorePoints = PlayerPrefs.GetInt("ScorePoints", 0);
+        SetBoardAndStartGame(PlayerPrefs.GetInt("BoardActive", 0));
     }
 
     private void OnItemAdded(GameObject card)
@@ -81,6 +81,9 @@ public class GameManager : MonoBehaviour
         if (cardOne.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name == 
             cardTwo.transform.GetChild(0).gameObject.GetComponent<Image>().mainTexture.name)
         {
+            PlayerPrefs.SetInt(cardOne.GetComponent<SaveCard>().IndexCard, 1);
+            PlayerPrefs.SetInt(cardTwo.GetComponent<SaveCard>().IndexCard, 1);
+            
             ScorePoints += 100 * combo;
 
             combo += 1;
@@ -98,14 +101,19 @@ public class GameManager : MonoBehaviour
             combo = 1;
             SoundManager.Singleton.PlayError();
             yield return new WaitForSeconds(2);
+            
             cardOne.GetComponent<Animator>().SetBool("Show", false);
             cardTwo.GetComponent<Animator>().SetBool("Show", false);
+            
+            PlayerPrefs.SetInt(cardOne.GetComponent<SaveCard>().IndexCard, 0);
+            PlayerPrefs.SetInt(cardTwo.GetComponent<SaveCard>().IndexCard, 0);
         }
     }
 
     public void SetScorePoint(int value)
     {
         scorePoints = value;
+        PlayerPrefs.SetInt("ScorePoints", value);
         HUDManager.Singleton.ScoreTxt.text = scorePoints.ToString();
     }
 
@@ -117,6 +125,9 @@ public class GameManager : MonoBehaviour
             foreach (var card in boardActive.CardsOnBoard)
             {
                 card.GetComponent<Animator>().SetBool("Show", false);
+                
+                PlayerPrefs.SetInt(card.GetComponent<SaveCard>().IndexCard, 0);
+                
                 card.GetComponent<Animator>().Play("BackIdle");
                 card.SetActive(false);
             }
@@ -135,8 +146,13 @@ public class GameManager : MonoBehaviour
                 break;
         }
         
+        PlayerPrefs.SetInt("BoardActive", index);
+        
         boardActive.gameObject.SetActive(true);
-        StartCoroutine(TurnOnCard());
+        if (!Loading)
+            StartCoroutine(TurnOnCard());
+        else
+            LoadCard();
         
         if(HUDManager.Singleton.EndGamePopup.activeInHierarchy)
             HUDManager.Singleton.EndGamePopup.SetActive(false);
@@ -148,7 +164,15 @@ public class GameManager : MonoBehaviour
         {
             SoundManager.Singleton.PlayInit();
             card.SetActive(true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
+    
+    private void LoadCard()
+    {
+        foreach (var card in boardActive.CardsOnBoard)
+        {
+            card.SetActive(true);
         }
     }
 }
